@@ -6,7 +6,7 @@ class Solution {
             for(int j = 0; j < board[i].length;j++){
                 char current = board[i][j];
                 if(current != '.'){
-                    if(!hSet.add(i + "row" + current) || !hSet.add(j + "column" + current) || !hSet.add(i/3 + "-" + j/3 + current)){
+                    if(!hSet.add(i + "row" + current) || !hSet.add(j + "column" + current) || !hSet.add(i/3 + "-" + j/3 + "-" + current)){
                         return false;
                     }
 
