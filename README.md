@@ -1,0 +1,1 @@
+I plan on using this repistory to hold design structure and algorithm questions I solve. I will be solving the popular variation of Neetcode's blind 150 and any interesting algorithm question I see online.
