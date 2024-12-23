@@ -1,0 +1,12 @@
+HashMap:
+
+putIfAbsent(key, value) - will populate the key with the value associated with it, if the key doesnt exit. Otherwise, key stays the same.
+
+getOrDefault(key, value) - method returns the value of the entry in the map which has a specified key. If the entry does not exist then the value is returned.
+
+
+String:
+
+indexOf("value") - will return the index of the value in the String
+indexOf("value", i) - will return the index of the value in the string =, but starting from index i
+substring(i, j) - will return the string starting at index i(inclusive) and ending at index j(exclusive)
