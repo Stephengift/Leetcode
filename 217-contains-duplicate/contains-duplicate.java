@@ -1,16 +1,16 @@
 class Solution {
     public boolean containsDuplicate(int[] nums) {
-        //first iterate through nums
-        //add it to a hashmap, using getordefault
-        //if hashmap already has value greater than 1 return false;
-        HashMap<Integer, Integer> hmap = new HashMap <>();
-        for(int i = 0; i<nums.length;i++){
-            int count = hmap.getOrDefault(nums[i], 1);
-            if(count > 1){
+        HashMap<Integer, Integer> map = new HashMap <>();
+
+        for(int i = 0; i < nums.length; i++){
+            map.put(nums[i], map.getOrDefault(nums[i], 0) + 1);
+        }
+        for (Map.Entry<Integer, Integer> entry : map.entrySet()) {
+            if (entry.getValue() > 1){
                 return true;
             }
-            hmap.put(nums[i], count+1);
         }
+        //System.out.print(map);
         return false;
     }
 }
