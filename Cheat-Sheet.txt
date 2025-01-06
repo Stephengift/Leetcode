@@ -10,3 +10,16 @@ String:
 indexOf("value") - will return the index of the value in the String
 indexOf("value", i) - will return the index of the value in the string =, but starting from index i
 substring(i, j) - will return the string starting at index i(inclusive) and ending at index j(exclusive)
+
+Monotionic stack - a stack that mantains an increasing or decreasing presence
+----Pseudocode--
+Given an integer array nums
+stack = []
+for num in nums:
+    while stack.length > 0 AND stack.top >= num:
+        stack.pop()
+    // Between the above and below lines, do some logic depending on the problem
+    stack.push(num)
+
+    //correct calculation of the middle index/integer of an array in java
+    left + (right - left) / 2
