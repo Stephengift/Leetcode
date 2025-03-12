@@ -8,8 +8,7 @@ class Solution {
             if(map.contains(s.charAt(right))){
                 map.remove(s.charAt(left));
                 left++;
-            }
-            else{
+            }else{
                 map.add(s.charAt(right));
                 right++;
                 maximum = Math.max(maximum, right-left);
@@ -20,4 +19,5 @@ class Solution {
     
     }
 }
+
 
